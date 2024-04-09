@@ -1,0 +1,67 @@
+.users-table {
+  font-size: 1.2rem;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+}
+.users-table td {
+  padding: 10px !important;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+.users-table thead th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 10px;
+}
+.users-table thead th span {
+  cursor: pointer;
+  user-select: none;
+}
+.users-table .user-img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.users-table a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: yellow;
+  white-space: nowrap;
+}
+.users-table a:hover {
+  color: yellow;
+}
+.users-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 1.5rem;
+}
+.users-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 1.5rem;
+}
+.users-table thead tr:last-child th:first-child {
+  border-top-left-radius: 1.5rem;
+  padding-left: 70px;
+}
+.users-table thead tr:last-child th:last-child {
+  border-top-right-radius: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .users-table {
+    font-size: 1rem !important;
+  }
+  .users-table a {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .users-table {
+    font-size: 0.8rem !important;
+  }
+  .users-table a {
+    font-size: 0.9rem !important;
+  }
+}
+.users-table-transparent {
+  color: transparent !important;
+}

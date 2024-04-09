@@ -1,0 +1,96 @@
+.searchInputs {
+  display: flex;
+  padding-right: 10px;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 90%;
+  align-self: center;
+}
+
+.searchIcon {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.search input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.dataResult {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 281px;
+  height: 200px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 5px;
+  z-index: 999;
+  transition: height 0.3s ease-in-out;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  text-decoration: none;
+  /* width: 100%; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 3px;
+  border-radius: 5px;
+  transition: all 50ms ease-in-out;
+}
+.dataItem:hover {
+  background-color: red;
+  color: white;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+.searchSpinner {
+  margin: 10% 45%;
+}
+.dataResult .result-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20% 10%;
+}
+.search-result-image {
+  margin: auto 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .search {
+    margin-top: 10px;
+  }
+}

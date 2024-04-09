@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.App {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  /* background-color: #474b4f !important; */
+  scroll-behavior: smooth;
+}
+html {
+  overflow-y: overlay;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2d3033;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #474b4f;
+}
+.nav-item {
+  margin: auto 5px;
+}
+@media screen and (max-width: 768px) {
+  .nav-item {
+    margin: auto 15px;
+    padding-top: 5px;
+  }
+}
+.customShake {
+  animation: customShake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes customShake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

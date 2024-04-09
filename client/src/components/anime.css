@@ -1,0 +1,134 @@
+.title {
+  height: 50px;
+  justify-content: center;
+  align-content: center;
+  margin-left: 20px;
+}
+.title p {
+  font-size: 1.6rem;
+}
+.anime-img img {
+  box-shadow: 0 5px 20px -8px #000;
+}
+.anime-details {
+  min-width: 225px;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .anime-details {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime-img {
+    margin: 30px !important;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .anime-details {
+    margin: 0.1rem !important;
+    font-size: smaller !important;
+  }
+  .anime-body {
+    margin: 0 0.5rem !important;
+  }
+  .anime-sypnosis-content,
+  .review-btn {
+    font-size: 0.67rem !important;
+  }
+  .anime-reviews {
+    font-size: 0.75rem !important;
+  }
+  .reviews-heading {
+    font-size: 1.1rem !important;
+  }
+  .user-img {
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+.anime-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+  border-radius: 10px;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.3);
+}
+.anime-block {
+  display: block;
+  margin-bottom: 5px;
+}
+.underlineUnder {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.anime-reviews {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.3);
+}
+.reviews-heading {
+  font-size: 1.6rem;
+}
+.anime-review {
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+.anime-review:last-child {
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+.user-img {
+  padding: 6px;
+  border-radius: 20%;
+  height: 80px;
+  width: 80px;
+}
+.user-info {
+  padding: 5px 10px;
+}
+.user-name {
+  padding: 5px 0;
+  color: yellow;
+  text-decoration: none;
+}
+.user-name:hover {
+  color: yellowgreen;
+}
+.user-info span {
+  padding: 10px 0;
+}
+.user-comment {
+  padding-bottom: 15px;
+}
+
+.anime-sypnosis-content {
+  height: 143px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+.anime-sypnosis-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.anime-sypnosis-content::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background-color: #2d3033;
+}
+.anime-sypnosis-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #474b4f;
+}
